@@ -1,0 +1,22 @@
+Example for unit 1:
+Question: WAPT find out if the entered number is positive or negative.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+        int a;
+        cout << "Enter any number: ";
+        cin >> a;
+        if(a==0)
+                cout << "Number is zero, neither positive nor negative";
+        else if(a>0)
+                cout << "Number is positive";
+        else
+                cout << "Number is negative";
+        return 0;
+}
+
+Output:
+Enter any number: -5
+Number is negative

@@ -1,0 +1,39 @@
+
+Example for unit 2:
+Question: WAPT to find out the smaller number between two classes using friend function.
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+class two;
+class one
+{
+        int x;
+public:
+        friend void min(one, two);
+} o;
+class two
+{
+        int y;
+public:
+        friend void min(one,two);
+}t;
+void min(one x, two y)
+{
+        x.x= 10;
+        y.y = 20;
+        if(x.x < y.y)
+                cout << "Smaller number: "<<x.x<<endl;
+        else
+                cout << "Smaller number: "<<y.y<<endl;
+}
+int main()
+{
+        clrscr();
+        min(o, t);
+        getch();
+        return 0;
+}
+
+Output:
+Smaller number: 10

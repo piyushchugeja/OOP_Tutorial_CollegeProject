@@ -1,0 +1,42 @@
+
+Example for unit 3:
+Question: WAP that demonstrates inheritance and use of constructor in derived class.
+
+#include<iostream>
+using namespace std;
+class Base
+{
+        int x;
+public:
+        Base()
+        {
+                cout << "Base default constructor";
+        }
+};
+class Derived : public Base
+{
+        int y;
+public:
+        Derived()
+{
+                cout << "Derived default constructor";
+        }
+        Derived(int i)
+        {
+                cout << "Derived parameterized constructor";
+        }
+};
+int main()
+{
+        Base b;
+        Derived d1;
+        Derived d2(10);
+	return 0;
+}
+
+Output:
+Base default constructor
+Base default constructor
+Derived default constructor
+Base default constructor
+Derived parameterized constructor
